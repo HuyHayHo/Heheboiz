@@ -46,16 +46,12 @@ int main(){
         printf("Enter information for student %d:\n", i+1);
         printf("\nStudent ID: ");
         scanf(" %s", students[i].studentID);
-        printf("\n");
         printf("Last Name: ");
-        scanf(" %s", students[i].lastName);
-        printf("\n");
+        scanf(" %[^\n]s", students[i].lastName);
         printf("First Name: ");
-        scanf(" %s", students[i].firstName);
-        printf("\n");
+        scanf(" %[^\n]s", students[i].firstName);
         printf("Birthdate (dd/mm/yyyy) \n"); 
         scanf("%d %d %d", &students[i].birthdate.bir, &students[i].birthdate.thd, &students[i].birthdate.ate);
-        printf("\n");
         printf("Algebra grade: ");
         scanf("%f", &students[i].algebraGrade);
         printf("Calculus grade: ");
